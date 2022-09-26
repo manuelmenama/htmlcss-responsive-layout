@@ -52,6 +52,8 @@ header{
     height: 60px;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    padding: 0 20px;
 }
 
 header img{
@@ -67,44 +69,106 @@ header nav a{
     text-decoration: none;
 }
 
-ul{
+nav ul{
     list-style: none;
     margin: 0 30px;
 }
 
-ul li{
+nav ul li{
     margin-left: 30px;
 }
 
-ul li a{
+nav ul li a{
     color: white;
 }
 
+header nav a,
+header nav a.button{
+    display: none;
+}
+
+header .icon::after{
+    content: '\f0c9';
+    cursor: pointer;
+}
 /* main */
 
 /* section what's in it for you */
 .what-in .row{
     flex-wrap: wrap;
-    
+}
+
+.what-in h3{
+    color: #0084fd;
+    font-size: 1.5rem;
 }
 
 .what-in .row .card{
     width: calc(100%);
     text-align: center;
+    background-color: #b5ddff;
+}
+
+.what-in .row .card.card.top-card{
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-in .row .card.top-card img{
+    width: 70%;
+    
 }
 /* app feature section */
 .app-feature{
     background-color: #9792e4;
+    text-align: center;
+}
+
+.app-feature .col-bottom{
+    background-color: white;
+    padding: 10px;
+}
+
+.app-feature .col-bottom  a.button{
+    background-color: #9792e4;
+
 }
 
 /* testimonial section */
+.testimonials{
+    text-align: center;
+}
+
+.testimonials .row .card{
+    background-color: #9792e4;
+    padding: 10px;
+}
+
+.testimonials .row .card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 /* benefit section */
 .benefit{
     background-color: #9792e4;
 }
 
+.benefit .row .card{
+    background-color: white;
+}
+
+.benefit .row .card a.button{
+    background-color: #9792e4;
+}
+
 /* about-us */
+.about-us .card a.button{
+    background-color: #9792e4;
+}
 
 /* footer */
 footer{
@@ -119,4 +183,27 @@ footer .footer-top{
 footer .footer-bottom{
     background-color: #333333;
     text-align: center;
+}
+
+/* soluzioni responsive */
+@media screen and (min-width: 768px) {
+
+    /* section what's in it for you */
+    .what-in .row .card.top-card{
+        width: calc(100% / 1.5);
+    }
+
+    .what-in .row .card{
+        width: calc(100% / 3);
+    }
+
+    /* testimonial section */
+    .testimonials .row .card{
+        display: flex;
+    }
+
+    /* benefit section */
+    .benefit{
+        
+    }
 }
