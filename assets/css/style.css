@@ -109,7 +109,7 @@ header .icon::after{
     background-color: #b5ddff;
 }
 
-.what-in .row .card.card.top-card{
+.what-in .row .card.top-card{
     text-align: left;
     flex-direction: column;
     align-items: center;
@@ -230,3 +230,26 @@ footer .footer-bottom{
 }
 
 /* soluzione desktop */
+@media screen and (min-width: 1080px) {
+    /* section what's in it for you */
+    .what-in .row .card.top-card{
+        flex-direction: row;
+    }
+
+    .app-feature .row{
+        display: flex;
+    }
+
+    .app-feature .row .col-top.col-left{
+        width: 50%;
+    }
+
+    .app-feature .row .col-bottom.col-right{
+        width: 50%;
+    }
+
+    /* benefit section */
+    .benefit .row .card{
+        width: calc(100% / 3);
+    }
+}
