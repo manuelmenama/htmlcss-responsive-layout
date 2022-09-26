@@ -11,6 +11,17 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+/* utilities */
 .d-flex{
     display: flex;
 }
+
+a.button{
+
+}
+
+/* header */
+
+/* main */
+
+/* footer */
