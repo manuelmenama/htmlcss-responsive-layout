@@ -79,14 +79,28 @@ ul li a{
 
 /* main */
 
-/* section what-in */
+/* section what's in it for you */
 .what-in .row{
     flex-wrap: wrap;
 }
 
+/* soluzione desktop */
 .what-in .row .card{
-    width: calc(100% / 3)
+    width: calc(100% / 3);
 }
+/* app feature section */
+.app-feature{
+    background-color: #9792e4;
+}
+
+/* testimonial section */
+
+/* benefit section */
+.benefit{
+    background-color: #9792e4;
+}
+
+/* about-us */
 
 /* footer */
 footer{
