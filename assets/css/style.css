@@ -22,6 +22,9 @@ body{
     margin: 0 auto;
 }
 
+img{
+    max-width: 100%;
+}
 /* utilities */
 .d-flex{
     display: flex;
@@ -82,11 +85,12 @@ ul li a{
 /* section what's in it for you */
 .what-in .row{
     flex-wrap: wrap;
+    
 }
 
-/* soluzione desktop */
 .what-in .row .card{
-    width: calc(100% / 3);
+    width: calc(100%);
+    text-align: center;
 }
 /* app feature section */
 .app-feature{
