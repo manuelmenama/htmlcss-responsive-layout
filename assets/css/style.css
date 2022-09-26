@@ -9,6 +9,17 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mini-container{
+    width: 30%;
+    margin: 0 auto;
 }
 
 /* utilities */
@@ -17,11 +28,64 @@ body{
 }
 
 a.button{
-
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
 }
 
 /* header */
+header{
+    background-color: #0084fd;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 40px;
+}
+
+header nav{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin: 0 30px;
+}
+
+ul li{
+    margin-left: 30px;
+}
+
+ul li a{
+    color: white;
+}
 
 /* main */
 
 /* footer */
+footer{
+    color: white;
+}
+
+footer .footer-top{
+    background-color: #9792e4;
+    text-align: center;
+}
+
+footer .footer-bottom{
+    background-color: #333333;
+    text-align: center;
+}
