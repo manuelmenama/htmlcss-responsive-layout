@@ -39,6 +39,10 @@ a.button{
     border-radius: 15px;
 }
 
+.fa-call{
+    font-family: 'Font Awesome 6 Free';
+}
+
 /* header */
 header{
     background-color: #0084fd;
@@ -74,6 +78,15 @@ ul li a{
 }
 
 /* main */
+
+/* section what-in */
+.what-in .row{
+    flex-wrap: wrap;
+}
+
+.what-in .row .card{
+    width: calc(100% / 3)
+}
 
 /* footer */
 footer{
