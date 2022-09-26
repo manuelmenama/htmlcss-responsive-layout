@@ -166,9 +166,18 @@ header .icon::after{
 }
 
 /* about-us */
+.about-us .card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 .about-us .card a.button{
     background-color: #9792e4;
 }
+
+
 
 /* footer */
 footer{
@@ -186,6 +195,8 @@ footer .footer-bottom{
 }
 
 /* soluzioni responsive */
+
+/* soluzione tablet */
 @media screen and (min-width: 768px) {
 
     /* section what's in it for you */
@@ -203,7 +214,19 @@ footer .footer-bottom{
     }
 
     /* benefit section */
-    .benefit{
-        
+    .benefit .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefit .row .card{
+        width: 50%;
+    }
+
+    /* about us section */
+    .about-us .row{
+        display: flex;
     }
 }
+
+/* soluzione desktop */
